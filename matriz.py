@@ -6,13 +6,13 @@ def leitor(matriz, linha, coluna):
       matriz[l][col] = dado
   return matriz
 
+
 def calculador_soma_coluna(matriz):
   vetor_soma = []
 
   for cols in matriz:
     vetor_soma.append(sum(cols))
   return vetor_soma
-
 
 
 def calculador_transposta(matriz):
@@ -41,7 +41,6 @@ def matriz_triangular(matriz):
       triangular += [x for x in column[:i]]
   return triangular
     
-
   
 def main():
   linha = int(input('Tamanho de linha: '))
